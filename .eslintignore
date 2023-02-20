@@ -4,3 +4,4 @@ webpack.*
 postcss.*
 **/*.test.js
 lib
+coverage
