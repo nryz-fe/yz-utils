@@ -1,13 +1,12 @@
 {
   "name": "nr-yz-utils-beta",
-  "version": "0.0.1-beta",
+  "version": "0.0.2-beta",
   "description": "有赚前端公用工具函数包-测试",
   "license": "MIT",
   "author": "yanyii",
   "type": "module",
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
-  "browser": "./lib/index.umd.js",
   "types": "./lib/types/index.d.ts",
   "scripts": {
     "prettier": "prettier -c --write \"src/**/*\"",
