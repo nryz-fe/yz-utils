@@ -1,27 +1,24 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": { "@/*": ["src/*"] },
-		"target": "ES5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+		"target": "ES5",
 		"lib": ["ESNext", "DOM"],
-		"module": "ESNext" /* Specify what module code is generated. */,
-		"rootDir": "./src" /* Specify the root folder within your source files. */,
-		"allowJs": true /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
-		"checkJs": true /* Enable error reporting in type-checked JavaScript files. */,
-		"outDir": "lib" /* Specify an output folder for all emitted files. */,
-		// "esModuleInterop": true /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */,
-		"allowSyntheticDefaultImports": true,
-		"strict": true /* Enable all strict type-checking options. */,
-		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
-		"skipLibCheck": false /* Skip type checking all .d.ts files. */,
+		"module": "ESNext",
+		"rootDir": "./src",
+		"allowJs": true,
+		"checkJs": true,
+		"outDir": "lib",
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": false,
 		"sourceMap": true,
 		"moduleResolution": "node",
-		"declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
-		"declarationDir": "./lib/types" /* Specify the output directory for generated declaration files. */,
-		"emitDeclarationOnly": true,
-		"strictNullChecks": true
+		"strictNullChecks": true,
+		"importHelpers": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	},
-
 	"include": ["src/index.ts"],
 	"exclude": ["node_modules", "lib"]
 }

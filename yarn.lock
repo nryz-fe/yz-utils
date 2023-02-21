@@ -4236,6 +4236,13 @@ magic-string@^0.27.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
+magic-string@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.29.0.tgz#f034f79f8c43dba4ae1730ffb5e8c4e084b16cf3"
+  integrity sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
 make-dir@^3.0.0:
   version "3.1.0"
   resolved "https://registry.npmmirror.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
@@ -4939,6 +4946,15 @@ rollup-plugin-clear@^2.0.7:
   dependencies:
     rimraf "^2.6.2"
 
+rollup-plugin-dts@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.npmmirror.com/rollup-plugin-dts/-/rollup-plugin-dts-5.2.0.tgz#1970edb69cfa3ead285ff4289d8fe273b87a5af3"
+  integrity sha512-B68T/haEu2MKcz4kNUhXB8/h5sq4gpplHAJIYNHbh8cp4ZkvzDvNca/11KQdFrB9ZeKucegQIotzo5T0JUtM8w==
+  dependencies:
+    magic-string "^0.29.0"
+  optionalDependencies:
+    "@babel/code-frame" "^7.18.6"
+
 rollup-plugin-terser@^7.0.2:
   version "7.0.2"
   resolved "https://registry.npmmirror.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz#e8fbba4869981b2dc35ae7e8a502d5c6c04d324d"
@@ -5408,7 +5424,7 @@ tslib@^1.8.1:
   resolved "https://registry.npmmirror.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.1.0:
+tslib@^2.1.0, tslib@^2.5.0:
   version "2.5.0"
   resolved "https://registry.npmmirror.com/tslib/-/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
   integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==

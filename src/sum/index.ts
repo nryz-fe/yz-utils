@@ -1,5 +1,6 @@
 // example
-export const sum = (...args: number[]): number => {
+import { MyType } from './type'
+export const sum = (...args: MyType): number => {
 	return args.reduce((prev, total) => total + prev, 0)
 }
 

@@ -1,7 +1,4 @@
-dist
-.eslintrc.js
-webpack.*
-postcss.*
+.eslintrc.cjs
 **/*.test.js
 lib
 coverage
