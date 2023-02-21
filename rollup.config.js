@@ -15,6 +15,7 @@ export default [
 				format: 'cjs',
 				entryFileNames: '[name].cjs.js',
 				sourcemap: false,
+				plugins: [terser()],
 				globals: {
 					'lodash-es': '_'
 				}
@@ -24,6 +25,7 @@ export default [
 				format: 'esm',
 				entryFileNames: '[name].esm.js',
 				sourcemap: false,
+				plugins: [terser()],
 				globals: {
 					'lodash-es': '_'
 				}
@@ -58,7 +60,7 @@ export default [
 		input: 'src/index.ts',
 		output: [
 			{
-				dir: 'lib/@types',
+				dir: 'lib/types',
 				format: 'es',
 				preserveModules: true
 			}
