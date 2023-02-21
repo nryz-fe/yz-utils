@@ -1,4 +1,4 @@
 .eslintrc.cjs
 **/*.test.js
-lib
+lib/
 coverage
