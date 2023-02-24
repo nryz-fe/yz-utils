@@ -17,7 +17,7 @@ export default [
 				sourcemap: false,
 				plugins: [terser()],
 				globals: {
-					'lodash-es': '_'
+					lodash: '_'
 				}
 			},
 			{
@@ -27,7 +27,7 @@ export default [
 				sourcemap: false,
 				plugins: [terser()],
 				globals: {
-					'lodash-es': '_'
+					lodash: '_'
 				}
 			},
 			{
@@ -38,7 +38,7 @@ export default [
 				sourcemap: false,
 				plugins: [terser()],
 				globals: {
-					'lodash-es': '_'
+					lodash: '_'
 				}
 			}
 		],
@@ -54,7 +54,7 @@ export default [
 				watch: true // 实时监听文件变化
 			})
 		],
-		external: ['lodash-es']
+		external: ['lodash']
 	},
 	{
 		input: 'src/index.ts',

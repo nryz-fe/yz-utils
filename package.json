@@ -1,12 +1,12 @@
 {
   "name": "nr-yz-utils-beta",
-  "version": "0.0.2-beta",
+  "version": "0.1.0-beta",
   "description": "有赚前端公用工具函数包-测试",
   "license": "MIT",
   "author": "yanyii",
-  "type": "module",
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "types": "./lib/types/index.d.ts",
   "scripts": {
     "prettier": "prettier -c --write \"src/**/*\"",
@@ -57,6 +57,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "lodash-es": "^4.17.21"
+    "lodash": "^4.17.21"
   }
 }
