@@ -19,5 +19,5 @@ yarn test
 ### 单文件测试
 
 ```cmd
-yarn test <函数文件夹/相对src路径名>
+yarn test <函数名 | /相对src路径名（更精确）>
 ```
