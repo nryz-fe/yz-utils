@@ -15,20 +15,14 @@ export default [
 				format: 'cjs',
 				entryFileNames: '[name].cjs.js',
 				sourcemap: false,
-				plugins: [terser()],
-				globals: {
-					lodash: '_'
-				}
+				plugins: [terser()]
 			},
 			{
 				dir: 'lib',
 				format: 'esm',
 				entryFileNames: '[name].esm.js',
 				sourcemap: false,
-				plugins: [terser()],
-				globals: {
-					lodash: '_'
-				}
+				plugins: [terser()]
 			},
 			{
 				dir: 'lib',
@@ -38,7 +32,7 @@ export default [
 				sourcemap: false,
 				plugins: [terser()],
 				globals: {
-					lodash: '_'
+					lodash: 'lodash'
 				}
 			}
 		],
