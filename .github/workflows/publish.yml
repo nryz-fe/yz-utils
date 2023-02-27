@@ -5,14 +5,14 @@ on:
     types: [published]
 
 jobs:
-  on-success:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
+          registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry'
           scope: '@newrank'
           cache: 'yarn'
       - run: yarn install --frozen-lockfile
@@ -20,9 +20,3 @@ jobs:
       - run: yarn publish
       env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
-  # on-failure:
-  #   runs-on: ubuntu-latest
-  #   if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-  #   steps:
-  #     - run: echo 'The triggering workflow failed'
