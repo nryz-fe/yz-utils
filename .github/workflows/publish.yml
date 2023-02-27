@@ -17,6 +17,8 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: yarn publish
+      env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     # if: ${{ github.event.workflow_run.conclusion == 'success' }}
   # on-failure:
   #   runs-on: ubuntu-latest
