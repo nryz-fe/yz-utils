@@ -1,9 +1,10 @@
 name: Publish
 
-workflow_run:
-  workflows: [Run Tests]
-  types: [completed]
-  branches: [publish]
+on:
+  workflow_run:
+    workflows: [Run Tests]
+    types: [completed]
+    branches: [publish]
 
 jobs:
   on-success:
@@ -17,7 +18,7 @@ jobs:
           cache: yarn
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - run: yarn publish
+      # - run: yarn publish
   on-failure:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'failure' }}
