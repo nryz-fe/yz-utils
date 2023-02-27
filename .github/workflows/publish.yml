@@ -11,6 +11,7 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
+          scope: '@newrank'
           cache: 'npm'
       - run: npm ci --force
       - run: npm run build
