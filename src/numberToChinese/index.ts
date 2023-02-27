@@ -1,5 +1,5 @@
-import { _getDecimal } from "../.internal/_getDecimal"
-import { _getInteger } from "../.internal/_getInteger"
+import { _getDecimal } from '../.internal/_getDecimal'
+import { _getInteger } from '../.internal/_getInteger'
 
 export const TEN_THOUSAND = 100 * 100
 export const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND
@@ -11,7 +11,8 @@ export const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND
  */
 export const numberToChinese = (num: number) => {
 	// 只处理小于一万亿的值
-	if (typeof num !== 'number' && num >= ONE_HUNDRED_MILLION * TEN_THOUSAND) return num
+	if (typeof num !== 'number' && num >= ONE_HUNDRED_MILLION * TEN_THOUSAND)
+		return num
 	// 繁体 traditional
 	const tlist = ['零', '壹', '貳', '叁', '肆', '伍', '陆', '柒', '捌', '玖']
 	const bList = ['拾', '佰', '仟', '万', '亿']
@@ -24,7 +25,7 @@ export const numberToChinese = (num: number) => {
 
 	// 处理千位级别的数字
 	const _getStr = (n: number) => {
-		let resultStrList:string[] = []
+		const resultStrList: string[] = []
 		let index = -1
 		while (n >= 1) {
 			resultStrList.unshift(tlist[n % 10] + (~index ? bList[index] : ''))
