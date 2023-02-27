@@ -13,7 +13,7 @@ jobs:
           registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
           cache: 'npm'
       - run: npm ci --force
-      - run: npm build
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
