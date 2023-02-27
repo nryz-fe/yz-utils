@@ -11,9 +11,9 @@ jobs:
         with:
           node-version: '18.x'
           registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
-          cache: 'yarn'
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-      - run: yarn publish
+          cache: 'npm'
+      - run: npm ci
+      - run: npm build
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
