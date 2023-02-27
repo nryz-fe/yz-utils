@@ -2,21 +2,19 @@ name: Test
 
 on:
   push:
-    branches:
-      - main
+    branches: [main, publish]
 
 jobs:
   test:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
         version: [14.x, 16.x, 18.x]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.version }}
-          cache: yarn
+          cache: 'yarn'
       - run: yarn install --frozen-lockfile
       - run: yarn test
