@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
+          registry-url: 'https://npm.newrank.cn'
           cache: 'npm'
       - run: npm ci --force
       - run: npm run build
