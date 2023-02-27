@@ -11,9 +11,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry'
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@newrank'
+          registry-url: 'https://packages.aliyun.com/5f0d166f5fd102f22f6b767b/npm/npm-registry/'
       - run: yarn install --frozen-lockfile
       - run: yarn build
       - run: yarn publish
