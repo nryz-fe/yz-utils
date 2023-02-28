@@ -1,16 +1,16 @@
 import { numberToChinese } from '../index'
 
 describe('numberToChinese', () => {
-	test('589624.525', () => {
-		expect(numberToChinese(589624.525)).toStrictEqual(
-			'伍拾捌万玖仟陆佰贰拾肆元伍角叁分'
-		)
+	test('0', () => {
+		expect(numberToChinese(0)).toStrictEqual('零元整')
 	})
 
-	test('109999995.2122564', () => {
-		expect(numberToChinese(109999995.2122564)).toStrictEqual(
-			'壹亿零玖佰玖拾玖万玖仟玖佰玖拾伍元贰角壹分'
-		)
+	test('100000000000000', () => {
+		expect(numberToChinese(100000000000000)).toStrictEqual(100000000000000)
+	})
+
+	test('20', () => {
+		expect(numberToChinese(20)).toStrictEqual('贰拾元整')
 	})
 
 	test('109999995.01', () => {
@@ -19,11 +19,15 @@ describe('numberToChinese', () => {
 		)
 	})
 
-	test('20', () => {
-		expect(numberToChinese(20)).toStrictEqual('贰拾元整')
+	test('109999995.01', () => {
+		expect(numberToChinese(109999995.1)).toStrictEqual(
+			'壹亿零玖佰玖拾玖万玖仟玖佰玖拾伍元壹角'
+		)
 	})
 
-	test('100000000000000', () => {
-		expect(numberToChinese(100000000000000)).toStrictEqual(100000000000000)
+	test('500000085.26548', () => {
+		expect(numberToChinese(500000085.26548)).toStrictEqual(
+			'伍亿零捌拾伍元贰角柒分'
+		)
 	})
 })
