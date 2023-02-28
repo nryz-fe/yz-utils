@@ -14,6 +14,6 @@ numberToChinese(35000)
 
 ## 参数介绍
 
-| params |  type  |
-| ------ | :----: |
-| num    | number |
+| options |  type  |    note    | default |
+| :-----: | :----: | :--------: | :-----: |
+|   num   | number | 阿拉伯数字 |         |
