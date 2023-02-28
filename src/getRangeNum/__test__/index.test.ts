@@ -8,12 +8,11 @@ const table = [
 
 describe.each(table)('a integer between min and max', (a, b) => {
 	if (a === b) {
-		test('only one integer', () => {
+		test('equal a or b', () => {
 			expect(getRangeNum(a, b)).toBe(a)
 		})
 	} else {
-		const min = a > b ? b : a
-		const max = a > b ? a : b
+		const [min, max] = a > b ? [b, a] : [a, b]
 		test('less than max', () => {
 			expect(getRangeNum(a, b)).toBeLessThan(max)
 		})

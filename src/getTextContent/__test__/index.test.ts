@@ -15,7 +15,10 @@ const table = [
 	}
 ]
 
-describe('filter html tag', () =>
-	test.concurrent.each(table)('expected only text', ({ json, expected }) => {
-		expect(getTextContent(json)).toBe(expected)
-	}))
+describe('getTextContent', () =>
+	test.concurrent.each(table)(
+		'expected only return text',
+		({ json, expected }) => {
+			expect(getTextContent(json)).toBe(expected)
+		}
+	))

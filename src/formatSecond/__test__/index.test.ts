@@ -1,6 +1,6 @@
 import { formatSecond } from '../index'
 
-describe('seconds to time', () => {
+describe('formatSecond', () => {
 	test('input is a number', () => {
 		expect(formatSecond(500)).toMatchObject({
 			day: 0,
