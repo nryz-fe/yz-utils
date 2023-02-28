@@ -3,7 +3,7 @@
   "version": "0.1.4-beta",
   "description": "有赚前端公用工具函数包-测试",
   "license": "MIT",
-  "author": "yanyii",
+  "contributors": ["yanyii(https://github.com/icctuan)","thomas(https://github.com/thomas-void0)"],
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
   "browser": "lib/index.umd.js",
@@ -24,6 +24,12 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/nryz-fe/yz-utils"
+  },
+  "bugs": {
+    "url": "https://github.com/nryz-fe/yz-utils/issues"
+  },
+  "engines": {
+    "node":">=14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",

@@ -13,7 +13,7 @@ dist
 dist-ssr
 *.local
 lib/
-coverage
+src/coverage/
 
 # Editor directories and files
 !.vscode/extensions.json
