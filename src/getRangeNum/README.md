@@ -6,10 +6,8 @@
 
 ### 基础用法
 
-```
-getRangeNum(10,100)
-
-// Expected Return 49
+```js
+getRangeNum(10, 100) // Expected Return 49
 ```
 
 ## 参数介绍

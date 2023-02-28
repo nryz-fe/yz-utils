@@ -1,15 +1,14 @@
 # isEmail
 
-是否是电子邮件
+检验邮箱格式
 
 ## 代码演示
 
 ### 基础用法
 
-```
-isEmail(`1781808347@qq.com`)
-
-// Expected Return: true
+```js
+isEmail('') // Expected Return: false
+isEmail('123456@163.com') // Expected Return: true
 ```
 
 ## 参数介绍

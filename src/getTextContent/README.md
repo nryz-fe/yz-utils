@@ -6,10 +6,15 @@
 
 ### 基础用法
 
-```
-getTextContent(`<!DOCTYPE html><html><head hidden><meta charset="UTF-8>" /><!-- 我是注释1 --><img />123</html>`)
+```js
+const o = getTextContent(
+	"全款拿下一线城市大房子，感谢那个努力不放弃的自己@MVE<front class='wd-text-primary'>护肤</front>"
+)
+// Expected Return: 全款拿下一线城市大房子，感谢那个努力不放弃的自己@MVE护肤
 
-// Expected Return: 123
+const o = getTextContent(
+	`<!DOCTYPE html><html><head hidden><meta charset="UTF-8>" /><!-- 我是注释1 --><img />123</html>`
+) // Expected Return: 123
 ```
 
 ## 参数介绍
@@ -17,3 +22,7 @@ getTextContent(`<!DOCTYPE html><html><head hidden><meta charset="UTF-8>" /><!-- 
 | options |  type  |      note      | default |
 | :-----: | :----: | :------------: | :-----: |
 |   str   | string | 待处理的字符串 |         |
+
+```
+
+```
