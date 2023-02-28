@@ -6,8 +6,8 @@ export const TEN_THOUSAND = 100 * 100
 export const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND
 
 /**
- * 阿拉伯数字转换为大写汉字金额 只处理小于一万亿的值
- * @param num 阿拉伯数字
+ * 非负数数字转换为大写汉字金额 只处理小于一万亿的值
+ * @param num 非负数数字
  * @returns 大写汉字金额
  */
 export const numberToChinese = (num: number) => {
@@ -21,6 +21,7 @@ export const numberToChinese = (num: number) => {
 	const aList = ['整']
 	let integer_result = ''
 	let decimal_result = ''
+	if (num === 0) return `${tlist[0]}${unitList[0]}${aList[0]}`
 	const integer = _getInteger(num)
 	const decimal = _getDecimal(num)
 	// 处理千位级别的数字
@@ -51,13 +52,15 @@ export const numberToChinese = (num: number) => {
 	}
 	if (wan >= 1) {
 		integer_result += _getStr(wan, yi >= 1 && wan < 1000) + bList[3]
-	} else if (qian >= 1 && integer >= 1) {
+	} else if (qian >= 1 && yi >= 1) {
 		integer_result += tlist[0]
 	}
 	if (qian >= 1) {
 		integer_result += _getStr(qian, wan >= 1 && qian < 1000)
 	}
-	integer_result += unitList[0]
+	if (integer_result.length) {
+		integer_result += unitList[0]
+	}
 	// 处理小数
 	if (decimal) {
 		const first = _getInteger(decimal * 10) % 10
