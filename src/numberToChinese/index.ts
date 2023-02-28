@@ -15,7 +15,7 @@ export const numberToChinese = (num: number) => {
 	if (typeof num !== 'number' || num >= ONE_HUNDRED_MILLION * TEN_THOUSAND)
 		return num
 	// 繁体 traditional
-	const tlist = ['零', '壹', '貳', '叁', '肆', '伍', '陆', '柒', '捌', '玖']
+	const tlist = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖']
 	const bList = ['拾', '佰', '仟', '万', '亿']
 	const unitList = ['元', '角', '分']
 	const aList = ['整']
