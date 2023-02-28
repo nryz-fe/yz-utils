@@ -1,5 +1,5 @@
 /**
- * 是否是润年
+ * 是否是闰年
  * @param year 时间 - 年
  * @returns boolean
  */
