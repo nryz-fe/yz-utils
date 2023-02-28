@@ -1,13 +1,12 @@
 import { isLeapYear } from '../index'
 
-test('isLeap2023', () => {
-	expect(isLeapYear(2023)).toBe(false)
-})
-
-test('isLeap2028', () => {
-	expect(isLeapYear('2028')).not.toBe(false)
-})
-
-test('isLeapYEAR', () => {
-	expect(isLeapYear('YEAR')).toBe(false)
+describe.each([
+	[2023, false],
+	['YEAR', false],
+	[2028, true],
+	['2028', true]
+])('a is b', (a, b) => {
+	test('is leapYear', () => {
+		expect(isLeapYear(a)).toBe(b)
+	})
 })
