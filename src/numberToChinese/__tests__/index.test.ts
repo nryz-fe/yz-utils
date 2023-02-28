@@ -12,6 +12,12 @@ test('109999995.2122564', () => {
 	)
 })
 
+test('109999995.01', () => {
+	expect(numberToChinese(109999995.01)).toStrictEqual(
+		'壹亿零玖佰玖拾玖万玖仟玖佰玖拾伍元壹分'
+	)
+})
+
 test('20', () => {
 	expect(numberToChinese(20)).toStrictEqual('贰拾元整')
 })
