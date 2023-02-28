@@ -14,6 +14,7 @@ jobs:
           cache: 'npm'
       - run: npm ci --force
       - run: npm run build
+      - run: npm run changelog
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

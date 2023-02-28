@@ -1,6 +1,6 @@
 # isEmail
 
-检验邮箱
+检验邮箱格式
 
 ## 代码演示
 
@@ -13,6 +13,6 @@ isEmail('123456@163.com') // Expected Return: true
 
 ## 参数介绍
 
-| params | description |  type  |
-| ------ | :---------: | :----: |
-| email  |  邮箱地址   | string |
+| options |  type  |      note      | default |
+| :-----: | :----: | :------------: | :-----: |
+|  email  | string | 待处理的字符串 |         |

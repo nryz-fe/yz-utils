@@ -1,19 +1,18 @@
 # getRangeNum
 
-指定范围内的随机整数
+获取指定范围内的随机整数(左包右不包)
 
 ## 代码演示
 
 ### 基础用法
 
 ```js
-const o = getRangeNum(5, 100)
-console.log(o) // Expected Return: 50 or 83 or 6 or ...
+getRangeNum(10, 100) // Expected Return 49
 ```
 
 ## 参数介绍
 
-| params | description |  type  |
-| ------ | :---------: | :----: |
-| min    |  最小范围   | number |
-| max    |  最大范围   | number |
+| options |  type  | note | default |
+| :-----: | :----: | ---- | ------- |
+|   min   | number | 小值 |         |
+|   max   | number | 大值 |         |

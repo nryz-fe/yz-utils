@@ -14,6 +14,6 @@ isLeapYear('YEAR') // Expected Return: false
 
 ## 参数介绍
 
-| params | description |       type       |
-| ------ | :---------: | :--------------: |
-| year   |    年份     | number \| string |
+| options |  type  |  note   | default |
+| :-----: | :----: | :-----: | :-----: |
+|  year   | number | 时间-年 |         |

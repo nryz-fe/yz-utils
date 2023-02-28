@@ -3,7 +3,10 @@
   "version": "0.1.4-beta",
   "description": "有赚前端公用工具函数包-测试",
   "license": "MIT",
-  "contributors": ["yanyii(https://github.com/icctuan)","thomas(https://github.com/thomas-void0)"],
+  "contributors": [
+    "yanyii(https://github.com/icctuan)",
+    "thomas(https://github.com/thomas-void0)"
+  ],
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",
   "browser": "lib/index.umd.js",
@@ -13,6 +16,7 @@
     "prepare": "husky install",
     "lint-staged": "eslint --ext .tsx,.ts,.js --cache src/",
     "build": "rollup -c",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "test": "jest"
   },
   "lint-staged": {
@@ -29,7 +33,7 @@
     "url": "https://github.com/nryz-fe/yz-utils/issues"
   },
   "engines": {
-    "node":">=14.0.0"
+    "node": ">=14.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -45,6 +49,7 @@
     "@types/lodash-es": "^4.17.6",
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
+    "conventional-changelog-cli": "^2.2.2",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -64,5 +69,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
