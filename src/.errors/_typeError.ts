@@ -1,5 +1,5 @@
 /**
- * 判断传入的值是否满足types的类型之一
+ * 判断传入的值类型是否满足types的类型之一，不满足则抛错
  * @param types 由typeof 的值组成的数组
  * @param value 需要判断的值
  */
