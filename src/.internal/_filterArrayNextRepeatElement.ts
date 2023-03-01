@@ -18,7 +18,7 @@ export const _filterArrayNextRepeatElement = (
 		}
 	}
 	if (isClean) {
-		indexList.forEach((i: number) => {
+		indexList.reverse().forEach((i: number) => {
 			resultList.splice(i, 1)
 		})
 	}
