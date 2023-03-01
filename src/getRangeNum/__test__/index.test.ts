@@ -9,7 +9,11 @@ const table: [any, any][] = [
 
 describe.each(table)('a integer between min and max', (a, b) => {
 	if (typeof a !== 'number' || typeof b !== 'number') {
-		expect(getRangeNum(a, b)).toBe(b)
+		test('input is not a number', () => {
+			expect(() => {
+				getRangeNum(a, b)
+			}).toThrow()
+		})
 	} else if (a === b) {
 		test('equal a or b', () => {
 			expect(getRangeNum(a, b)).toBe(a)
