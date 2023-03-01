@@ -27,3 +27,5 @@ describe('numberToChinese', () => {
 		expect(numberToChinese(100000000000000)).toStrictEqual(100000000000000)
 	})
 })
+
+console.log('test')
