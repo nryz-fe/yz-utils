@@ -1,19 +1,29 @@
 import { _filterArrayNextRepeatElement } from '../.internal/_filterArrayNextRepeatElement'
 import { _getDecimal } from '../.internal/_getDecimal'
 import { _getInteger } from '../.internal/_getInteger'
+import { _typeError } from '../.errors/_typeError'
 
 export const TEN_THOUSAND = 100 * 100
 export const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND
 
 /**
- * 非负数数字转换为大写汉字金额 只处理小于一万亿的值
+ * 非负数数字转换为大写汉字金额 只处理小于等于一万亿的值
  * @param num 非负数数字
  * @returns 大写汉字金额
  */
 export const numberToChinese = (num: number) => {
 	// 只处理小于一万亿的值 啊 东拼西凑版
-	if (typeof num !== 'number' || num >= ONE_HUNDRED_MILLION * TEN_THOUSAND)
-		return num
+	// if (
+	// 	typeof num !== 'number' ||
+	// 	num >= ONE_HUNDRED_MILLION * TEN_THOUSAND ||
+	// 	num < 0
+	// ) {
+	// 	throw new Error()
+	// }
+	_typeError(num, ['number'])
+	if (num >= ONE_HUNDRED_MILLION * TEN_THOUSAND * 100 || num < 0) {
+		throw new RangeError('参数超出限制范围')
+	}
 	// 繁体 traditional
 	const tlist = ['零', '壹', '贰', '叁', '肆', '伍', '陆', '柒', '捌', '玖']
 	const bList = ['拾', '佰', '仟', '万', '亿']
