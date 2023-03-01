@@ -13,9 +13,9 @@ dist
 dist-ssr
 *.local
 lib/
-coverage
+src/coverage/
 
-# Editor directories and files
+# Editor directories and files;
 !.vscode/extensions.json
 .idea
 .DS_Store

@@ -15,5 +15,7 @@
 /.prettierignore
 /yarn-error.log
 /.vscode
+/.github
+/node_modules
 
 /LICENSE
