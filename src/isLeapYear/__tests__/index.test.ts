@@ -1,11 +1,13 @@
 import { isLeapYear } from '../index'
 
-const table: [number, boolean][] = [
+const table: [number | string, boolean | string][] = [
 	[2023, false],
-	[2028, true]
+	[2028, true],
+	['YEAR', 'YEAR']
 ]
 
-describe('LeapYear', () =>
-	test.concurrent.each(table)('return isLeapYear', (a, expected) => {
-		expect(isLeapYear(a)).toBe(expected)
-	}))
+describe.each(table)('LeapYear', (a, expected) => {
+	test(`returns ${expected}`, () => {
+		expect(isLeapYear(a as any)).toBe(expected)
+	})
+})
