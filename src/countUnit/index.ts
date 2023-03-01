@@ -1,4 +1,5 @@
 import { round } from 'lodash-es'
+import { _typeError } from '../.errors/_typeError'
 
 /**
  * 将数字转换为带单位的格式，最大单位万亿
@@ -8,9 +9,8 @@ import { round } from 'lodash-es'
  * @returns
  */
 export const countUnit = (num: number, len = 2, isK = false) => {
-	if (typeof num !== 'number') {
-		return
-	}
+	_typeError(num, ['number'])
+
 	const ONE_THOUSAND = 1000
 	const TEN_THOUSAND = ONE_THOUSAND * 10
 	const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND

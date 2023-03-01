@@ -6,8 +6,8 @@ import { _typeError } from '../.errors/_typeError'
  * @returns []
  */
 export const getDaysPerMonthByYear = (year?: number) => {
-	// if (typeof year !== 'number' && typeof year !== 'undefined') return
 	_typeError(year, ['number', 'undefined'])
+
 	const dayList: number[] = []
 	const currentDate = new Date()
 	const cYear = year ?? currentDate.getFullYear()
