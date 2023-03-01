@@ -23,6 +23,10 @@ describe('getTextContent', () =>
 	test.concurrent.each(table)(
 		'expected only return text',
 		({ json, expected }) => {
-			expect(getTextContent(json as any)).toBe(expected)
+			if (typeof json !== 'string') {
+				expect(() => getTextContent(json as any)).toThrow()
+			} else {
+				expect(getTextContent(json as any)).toBe(expected)
+			}
 		}
 	))

@@ -5,7 +5,8 @@
   "license": "MIT",
   "contributors": [
     "yanyii(https://github.com/icctuan)",
-    "thomas(https://github.com/thomas-void0)"
+    "thomas(https://github.com/thomas-void0)",
+    "962464zyy(https://github.com/962464zyy)"
   ],
   "main": "./lib/index.cjs.js",
   "module": "./lib/index.esm.js",

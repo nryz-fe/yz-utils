@@ -7,7 +7,15 @@ const table: [number | string, boolean | string][] = [
 ]
 
 describe.each(table)('LeapYear', (a, expected) => {
-	test(`returns ${expected}`, () => {
-		expect(isLeapYear(a as any)).toBe(expected)
-	})
+	if (typeof a !== 'number') {
+		test('input is not a number', () => {
+			expect(() => {
+				isLeapYear(a as any)
+			}).toThrow()
+		})
+	} else {
+		test(`returns ${expected}`, () => {
+			expect(isLeapYear(a as any)).toBe(expected)
+		})
+	}
 })

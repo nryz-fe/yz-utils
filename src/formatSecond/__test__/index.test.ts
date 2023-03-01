@@ -10,10 +10,16 @@ describe('formatSecond', () => {
 			second: 20
 		})
 	})
+
 	test('input < 0', () => {
-		expect(formatSecond(-1)).toBe(-1)
+		expect(() => {
+			formatSecond(-1)
+		}).toThrow()
 	})
+
 	test('input is not a number', () => {
-		expect(formatSecond('notNumber' as any)).toBe('notNumber')
+		expect(() => {
+			formatSecond('notNumber' as any)
+		}).toThrow()
 	})
 })

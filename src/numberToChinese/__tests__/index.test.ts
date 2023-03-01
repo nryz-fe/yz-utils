@@ -6,15 +6,19 @@ describe('numberToChinese', () => {
 	})
 
 	test('100000000000000', () => {
-		expect(numberToChinese(100000000000000)).toStrictEqual(100000000000000)
+		expect(() => {
+			numberToChinese(100000000000000)
+		}).toThrow()
+	})
+
+	test('-20', () => {
+		expect(() => {
+			numberToChinese(-20)
+		}).toThrow()
 	})
 
 	test('20', () => {
 		expect(numberToChinese(20)).toStrictEqual('贰拾元整')
-	})
-
-	test('-20', () => {
-		expect(numberToChinese(-20)).toStrictEqual('负贰拾元整')
 	})
 
 	test('109999995.01', () => {
