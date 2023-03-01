@@ -15,6 +15,7 @@ export default {
 			'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
 	},
 	moduleNameMapper: {
-		'^lodash-es$': 'lodash'
+		'^lodash-es$': 'lodash',
+		'^@/(.*)$': '<rootDir>/$1'
 	}
 }
