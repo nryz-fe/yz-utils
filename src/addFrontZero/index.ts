@@ -6,7 +6,10 @@
  * @returns 返回一个指定位数数字的字符串
  */
 export const addFrontZero = (num: number, digit = 2) => {
-	if (digit < 0) return num.toString()
+	if (digit < 0) {
+		throw new RangeError('参数超出限制范围')
+	}
+
 	const str = '0'.repeat(digit) + num
 	if (num >= 0) {
 		return str.slice(-digit)
