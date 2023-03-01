@@ -10,5 +10,5 @@ export const getRangeNum = (min: number, max: number) => {
 	_typeError(min, ['number'])
 	_typeError(max, ['number'])
 
-	return +(Math.random() * Math.abs(max - min) + Math.min(min, max)).toFixed()
+	return Math.floor(Math.random() * Math.abs(max - min) + Math.min(min, max))
 }
