@@ -35,3 +35,5 @@ describe('numberToChinese', () => {
 		)
 	})
 })
+
+console.log('test')
