@@ -1,7 +1,7 @@
 import { _typeError } from '@/.errors/_typeError'
 
 /**
- * 根据传入的时间(秒)来返回对应的格式字符
+ * 根据传入的时间(秒)返回解析为天时分秒的对象
  * @param originTime number 秒数
  * @returns { originTime, second, minute, hour, day }
  */
