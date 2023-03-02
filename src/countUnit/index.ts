@@ -1,4 +1,4 @@
-import { round } from 'lodash-es'
+import { round } from 'lodash'
 import { _typeError } from '../.errors/_typeError'
 
 /**
