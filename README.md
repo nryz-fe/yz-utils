@@ -1,8 +1,6 @@
-# @newrank/yz-utils
+# 有赚前端公用工具函数包
 
 [![Test](https://github.com/nryz-fe/yz-utils/actions/workflows/test.yml/badge.svg)](https://github.com/nryz-fe/yz-utils/actions/workflows/test.yml)
-
-有赚前端公用工具函数包
 
 # 安装
 
