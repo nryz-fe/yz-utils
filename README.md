@@ -7,13 +7,13 @@
 # 安装
 
 ```
-npm i nr-yz-utils-beta
+npm install @nryz/utils
 ```
 
 or
 
 ```
-yarn add nr-yz-utils-beta
+yarn add @nryz/utils
 ```
 
 # 使用
