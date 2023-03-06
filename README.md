@@ -18,6 +18,14 @@ yarn add nr-yz-utils-beta
 
 # 使用
 
+```
+import { getTextContent } from 'nr-yz-utils-beta'
+const str = `<!DOCTYPE html><html><head hidden><meta charset="UTF-8>" /><!-- 我是注释1 --><img />123</html>`
+const text = getTextContent()
+
+console.log(text) // 123
+```
+
 |           方法名           |                              解释                               |                                             输入                                              |                                           输出                                           |
 | :------------------------: | :-------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
 |        addFrontZero        |       给一个数字添加前置 0，返回一个指定位数数字的字符串        |                                    <num: number,[digit=2]>                                    |                                     string \| Error                                      |

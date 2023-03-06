@@ -8,17 +8,6 @@ import { _typeError } from '@/.errors/_typeError'
 export const getTextContent = (str: string) => {
 	_typeError(str, ['string'])
 
-	// 文档类型
-	const reg8 = /(<!DOCTYPE.*?>)/gis
-	// html 注释
-	const reg9 = /(<!--.*?-->)/gis
-	// 前标签
-	const reg5 = /<([a-z]+|h[1-6]|) ?\/?>/gis
-	// 加上属性的前标签
-	const reg7 =
-		/<([a-z]+|h[1-6]|)( [a-z-]+(=(?<quote>['"]).*?\k<quote>)?)? ?\/?>/gis
-	// 后标签
-	const reg6 = /<\/([a-z]+|h[1-6]| *)>/gis
 	const reg =
 		/<!DOCTYPE.*?>|<!--.*?-->|<([a-z]+|h[1-6]|)( [a-z-]+(=(?<quote>['"]).*?\k<quote>)?)? ?\/?>|<\/([a-z]+|h[1-6]| *)>/gis
 	return str.replace(reg, '')
