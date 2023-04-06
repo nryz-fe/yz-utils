@@ -1,5 +1,5 @@
-import { _isEmail } from '../_isEmail'
-import { _filterArrayNextRepeatElement } from '../_filterArrayNextRepeatElement'
+import _isEmail from '../_isEmail'
+import _filterArrayNextRepeatElement from '../_filterArrayNextRepeatElement'
 
 describe('_isEmail', () =>
 	test.concurrent.each([

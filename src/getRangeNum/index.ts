@@ -1,4 +1,4 @@
-import { _typeError } from '@/.errors/_typeError'
+import _typeError from '@/.errors/_typeError'
 
 /**
  * 获取指定范围内的随机整数(左包右不包)

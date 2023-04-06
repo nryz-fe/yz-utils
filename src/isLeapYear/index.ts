@@ -1,4 +1,4 @@
-import { _typeError } from '@/.errors/_typeError'
+import _typeError from '@/.errors/_typeError'
 
 /**
  * 是否是闰年
