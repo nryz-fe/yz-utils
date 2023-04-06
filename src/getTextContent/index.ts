@@ -1,4 +1,4 @@
-import { _typeError } from '@/.errors/_typeError'
+import _typeError from '@/.errors/_typeError'
 
 /**
  * 去掉字符串中的html部分(包含注释，文档类型) 只获取textContent
@@ -11,5 +11,4 @@ export const getTextContent = (str: string) => {
 	const reg =
 		/<!DOCTYPE.*?>|<!--.*?-->|<([a-z]+|h[1-6]|)( [a-z-]+(=(?<quote>['"]).*?\k<quote>)?)? ?\/?>|<\/([a-z]+|h[1-6]| *)>/gis
 	return str.replace(reg, '')
-	// return str.replace(reg, '').replace(/[\r\n]/g, '')
 }

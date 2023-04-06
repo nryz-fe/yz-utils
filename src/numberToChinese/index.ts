@@ -1,7 +1,7 @@
-import { _filterArrayNextRepeatElement } from '../.internal/_filterArrayNextRepeatElement'
-import { _getDecimal } from '../.internal/_getDecimal'
-import { _getInteger } from '../.internal/_getInteger'
-import { _typeError } from '../.errors/_typeError'
+import _filterArrayNextRepeatElement from '../.internal/_filterArrayNextRepeatElement'
+import _getDecimal from '../.internal/_getDecimal'
+import _getInteger from '../.internal/_getInteger'
+import _typeError from '../.errors/_typeError'
 
 export const TEN_THOUSAND = 100 * 100
 export const ONE_HUNDRED_MILLION = TEN_THOUSAND * TEN_THOUSAND

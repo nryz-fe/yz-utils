@@ -1,4 +1,4 @@
-import { _typeError } from '../.errors/_typeError'
+import _typeError from '../.errors/_typeError'
 
 /**
  * 为指定的数字添加千分位分隔符

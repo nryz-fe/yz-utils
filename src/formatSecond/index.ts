@@ -1,4 +1,4 @@
-import { _typeError } from '@/.errors/_typeError'
+import _typeError from '@/.errors/_typeError'
 
 /**
  * 根据传入的时间(秒)返回解析为天时分秒的对象

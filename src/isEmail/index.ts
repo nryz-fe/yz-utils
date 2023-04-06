@@ -1,4 +1,4 @@
-import { _isEmail } from '../.internal/_isEmail'
+import _isEmail from '../.internal/_isEmail'
 
 /**
  * 是否是电子邮件

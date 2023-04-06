@@ -1,4 +1,4 @@
-import { _typeError } from '../.errors/_typeError'
+import _typeError from '../.errors/_typeError'
 
 /**
  * 获取指定年份的每个月的天数 返回天数的数组

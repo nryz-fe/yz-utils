@@ -4,10 +4,7 @@
  * @param isClean boolean 是否清除处理过程中产生的空字符串
  * @returns string[]
  */
-export const _filterArrayNextRepeatElement = (
-	list: string[],
-	isClean?: boolean
-) => {
+const _filterArrayNextRepeatElement = (list: string[], isClean?: boolean) => {
 	if (!Array.isArray(list)) return []
 	const indexList: number[] = []
 	const resultList = [...list]
@@ -24,3 +21,5 @@ export const _filterArrayNextRepeatElement = (
 	}
 	return resultList
 }
+
+export default _filterArrayNextRepeatElement

@@ -1,5 +1,5 @@
 import { round } from 'lodash'
-import { _typeError } from '../.errors/_typeError'
+import _typeError from '../.errors/_typeError'
 
 /**
  * 将数字转换为带单位的格式，最大单位万亿
