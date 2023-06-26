@@ -5,6 +5,14 @@ import { getTextContent } from './getTextContent'
 import { getRangeNum } from './getRangeNum'
 import { formatSecond } from './formatSecond'
 import { addFrontZero } from './addFrontZero'
+import { isTruthy } from './isTruthy'
+import { isFalsy } from './isFalsy'
+import { getThousandBitSeparatorStr } from './getThousandBitSeparatorStr'
+import { getDaysPerMonthByYear } from './getDaysPerMonthByYear'
+import { getDateInfo } from './getDateInfo'
+import { countUnit } from './countUnit'
+import { round } from './round'
+import { toPercent } from './toPercent'
 
 export {
 	numberToChinese,
@@ -13,5 +21,13 @@ export {
 	getTextContent,
 	getRangeNum,
 	formatSecond,
-	addFrontZero
+	addFrontZero,
+	isTruthy,
+	isFalsy,
+	getThousandBitSeparatorStr,
+	getDaysPerMonthByYear,
+	getDateInfo,
+	countUnit,
+	round,
+	toPercent
 }
