@@ -19,8 +19,8 @@ camelCase('__FOO_BAR__');
 
 ## 参数介绍
 
-camelCase(string)
+camelCase(word)
 
 | options |  type   |        note        | default |
 | :-----: | :-----: | :----------------: | :-----: |
-|   string   |  string  |     要转化的字符     |    -     |
+|   word   |  string  |     要转化的字符     |    -     |
