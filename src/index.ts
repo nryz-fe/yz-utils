@@ -13,6 +13,18 @@ import { getDateInfo } from './getDateInfo'
 import { countUnit } from './countUnit'
 import { round } from './round'
 import { toPercent } from './toPercent'
+import {
+	isFunction,
+	isDef,
+	isUnDef,
+	isObject,
+	isDate,
+	isNumber,
+	isAsyncFunction,
+	isPromise,
+	isString,
+	isBoolean
+} from './is'
 
 export {
 	numberToChinese,
@@ -29,5 +41,15 @@ export {
 	getDateInfo,
 	countUnit,
 	round,
-	toPercent
+	toPercent,
+	isFunction,
+	isDef,
+	isUnDef,
+	isObject,
+	isDate,
+	isNumber,
+	isAsyncFunction,
+	isPromise,
+	isString,
+	isBoolean
 }

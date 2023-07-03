@@ -7,12 +7,15 @@ import { round } from '../round'
  * @param {boolean} unit 返回值是否带百分号
  */
 export function toPercent(number: number): number
+// eslint-disable-next-line no-redeclare
 export function toPercent(number: number, precision: number): number
+// eslint-disable-next-line no-redeclare
 export function toPercent(
 	number: number,
 	precision: number,
 	unit: boolean
 ): string
+// eslint-disable-next-line no-redeclare
 export function toPercent(number: number, precision = 2, unit?: boolean) {
 	if (typeof number !== 'number') return number
 
