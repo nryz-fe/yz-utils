@@ -13,7 +13,7 @@
   "browser": "lib/index.umd.js",
   "types": "./lib/types/index.d.ts",
   "scripts": {
-    "prettier": "prettier -c --write \"src/**/*\"",
+    "prettier": "prettier --cache --write \"src/**/*\"",
     "prepare": "husky install",
     "lint-staged": "eslint --ext .tsx,.ts,.js --cache src/",
     "build": "rollup -c",
@@ -23,9 +23,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged",
-    "**/*.{js,jsx,tsx,ts,less,md,json}": [
-      "prettier --write"
-    ]
+    "**/*.{js,jsx,tsx,ts,less,md,json}": "prettier"
   },
   "repository": {
     "type": "git",
