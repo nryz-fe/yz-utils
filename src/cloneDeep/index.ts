@@ -1,6 +1,6 @@
 import { isObject } from '../is'
 
-export const cloneDeep = <T>(obj: any): T => {
+export const cloneDeep = <T>(obj: T): T => {
 	let newObj: any
 	if (Array.isArray(obj)) {
 		newObj = []

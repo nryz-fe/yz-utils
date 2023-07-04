@@ -22,4 +22,4 @@ padStart(input, length, pad)
 | :-----: | :-----: | :----------------: | :-----: |
 |   input   |  string \| number  |     输入字符/数字     |    -     |
 |   length   | number  |     返回字符串的长度     |    -    |
-|   pad    | boolean | 前缀字符 |  -  |
+|   pad    | string \| number | 前缀字符 |  -  |

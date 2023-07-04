@@ -11,7 +11,7 @@
 'AsyncFunction'  
 'Promise'  
 'String'  
-'Boolean'
+'Boolean'  
 
 ## 代码演示
 

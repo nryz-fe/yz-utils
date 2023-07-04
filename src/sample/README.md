@@ -16,7 +16,7 @@ sample(-0.20135) // Expected Return: -0.20135
 
 ## 参数介绍
 
-sample(collection , n)
+sample(collection)
 
 | options |  type   |        note        | default |
 | :-----: | :-----: | :----------------: | :-----: |

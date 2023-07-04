@@ -1,4 +1,4 @@
-export const meanBy = (collection: any[], iteratee: Function) => {
+export const sumBy = (collection: any[], iteratee: Function) => {
 	if (!Array.isArray(collection)) return collection
 	if (!collection.length) return 0
 	const total = collection.reduce((prev, cur) => {
@@ -7,5 +7,5 @@ export const meanBy = (collection: any[], iteratee: Function) => {
 		}
 		return cur + prev
 	}, 0)
-	return total / collection.length
+	return total
 }

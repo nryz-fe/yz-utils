@@ -1,4 +1,4 @@
-# meanBy
+# sumBy
 
 计算array的总和，接受 iteratee 来调用 array 中的每一个元素返回参与计算的元素值
 
@@ -18,7 +18,7 @@ sumBy(objects, 'n');
 
 ## 参数介绍
 
-meanBy(collection, iteratee)
+sumBy(collection, iteratee)
 
 | options |  type   |        note        | default |
 | :-----: | :-----: | :----------------: | :-----: |
